@@ -17,3 +17,41 @@ int main(){
 	
 	return 0;
 }
+
+void shuffle(int &a,int &b,int &c,int &d){
+	int n;
+	n=rand()%5;
+	if(n==0){
+		int p;
+		p=a;
+		a=b;
+		b=p;
+
+	}else if(n==1){
+		int p;
+		p=b;
+		b=c;
+		c=p;
+
+	}else if(n==2){
+		int p;
+		p=c;
+		c=d;
+		d=p;
+	}else if(n==3){
+		int p;
+		p=a;
+		a=d;
+		d=p;
+	}else if(n==4){
+		int p;
+		p=b;
+		b=d;
+		d=p;
+	}else if(n==5){
+		int p;
+		p=c;
+		c=d;
+		d=p;
+	}
+}
