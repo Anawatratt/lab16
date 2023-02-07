@@ -1,0 +1,1 @@
+sort(&data[0],&data[10]);
